@@ -40,13 +40,18 @@
 如果您没有编程基础，或者只想快速使用本软件，请直接下载我们为您打包好的 Windows 绿色版程序：
 
 1.  访问本项目的 [Releases 页面](https://github.com/xgnhack/aihr-studio/releases)。
-2.  下载最新版本的 `AIHR_Studio_Windows_v1.0.0.zip` 压缩包。
+2.  下载最新版本的 `AIHR_Studio_Windows_v1.1.2.zip` 压缩包。
 3.  解压压缩包到任意文件夹。
 4.  双击运行文件夹中的 **`AIHR Studio.exe`** 即可启动。
 
 ### macOS 用户
 
-目前暂未提供 macOS 的预编译安装包。如果您使用的是 Mac 电脑，请参考下方的 [开发指南](#-开发指南--development) 自行构建。
+我们提供了适配 macOS (Apple Silicon / M系列芯片) 的应用程序：
+
+1.  访问本项目的 [Releases 页面](https://github.com/xgnhack/aihr-studio/releases)。
+2.  下载 `AIHR_Studio_Mac_Arm64_v1.1.2.zip` (或 dmg 文件)。
+3.  解压或安装后即可运行。
+    *   *注意：如果提示“无法打开，因为无法验证开发者”，请在“系统设置” -> “隐私与安全性”中允许运行。*
 
 ## 🚀 开发指南 | Development
 
