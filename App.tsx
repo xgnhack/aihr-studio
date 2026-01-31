@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Briefcase, FileText, BarChart2, Settings as SettingsIcon, Sliders, Play, Trash2, Download, FileQuestion, Upload, Plus, AlertCircle, CheckCircle, FileUp, Loader2, Globe, Check, Save, AlertTriangle, Clock, HelpCircle, Terminal, Sparkles, FileSearch, ExternalLink } from 'lucide-react';
+import { Briefcase, FileText, BarChart2, Settings as SettingsIcon, Sliders, Play, Trash2, Download, FileQuestion, Upload, Plus, AlertCircle, CheckCircle, FileUp, Loader2, Globe, Check, Save, AlertTriangle, Clock, HelpCircle, Terminal, Sparkles, FileSearch, ExternalLink, Github } from 'lucide-react';
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -797,8 +797,16 @@ export default function App() {
                 EN
             </button>
         </div>
-        <div className="text-[10px] text-slate-500 text-center">
-             v1.1.2 | Custom Model
+        <div className="text-[10px] text-slate-500 text-center flex flex-col items-center gap-1">
+             <span>v1.1.2 | Custom Model</span>
+             <a 
+                href="https://github.com/xgnhack/aihr-studio" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-blue-400 transition-colors"
+             >
+                <Github size={10} /> GitHub
+             </a>
         </div>
       </div>
     </div>
