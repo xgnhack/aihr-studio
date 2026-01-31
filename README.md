@@ -33,7 +33,22 @@
 - **文件处理**: Mammoth (Docx), PDF.js (PDF), SheetJS (Excel)
 - **图表**: Recharts
 
-## 🚀 快速开始 | Getting Started
+## 📦 下载与安装 | Download & Installation
+
+### Windows 用户 (推荐)
+
+如果您没有编程基础，或者只想快速使用本软件，请直接下载我们为您打包好的 Windows 绿色版程序：
+
+1.  访问本项目的 [Releases 页面](https://github.com/xgnhack/aihr-studio/releases)。
+2.  下载最新版本的 `AIHR_Studio_Windows_v1.0.0.zip` 压缩包。
+3.  解压压缩包到任意文件夹。
+4.  双击运行文件夹中的 **`AIHR Studio.exe`** 即可启动。
+
+### macOS 用户
+
+目前暂未提供 macOS 的预编译安装包。如果您使用的是 Mac 电脑，请参考下方的 [开发指南](#-开发指南--development) 自行构建。
+
+## 🚀 开发指南 | Development
 
 ### 环境要求 | Prerequisites
 
@@ -44,7 +59,7 @@
 
 1. **克隆项目到本地**
    ```bash
-   git clone https://github.com/your-username/aihr-studio.git
+   git clone https://github.com/xgnhack/aihr-studio.git
    cd aihr-studio
    ```
 

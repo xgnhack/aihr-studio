@@ -2,10 +2,14 @@
   "name": "aihr-studio",
   "private": true,
   "version": "0.0.0",
+  "description": "AIHR Studio Application",
+  "author": "AIHR",
   "type": "module",
+  "main": "dist-electron/main.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "concurrently -k \"vite\" \"npm run electron:start\"",
+    "electron:start": "wait-on tcp:5173 && tsc -p electron && cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .",
+    "build": "tsc -p electron && vite build && electron-builder",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,9 +28,35 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
     "electron": "^40.1.0",
     "electron-builder": "^26.4.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "wait-on": "^9.0.3"
+  },
+  "build": {
+    "appId": "com.aihr.studio",
+    "productName": "AIHR Studio",
+    "asar": false,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icon.icns"
+    }
   }
 }
